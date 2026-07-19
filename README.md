@@ -1,40 +1,46 @@
 # Employee Onboarding Workflow using SAP Build Process Automation
 
-An end-to-end Employee Onboarding Workflow built using **SAP Build Process Automation (SAP Build BPA)** on **SAP Business Technology Platform (SAP BTP)**. The solution automates employee onboarding by collecting employee information, obtaining manager approval, executing onboarding activities in parallel, and tracking workflow execution through SAP Build Monitoring.
+![SAP](https://img.shields.io/badge/SAP-Build%20Process%20Automation-blue)
+![SAP BTP](https://img.shields.io/badge/SAP-BTP-green)
+![Workflow](https://img.shields.io/badge/Workflow-Automation-orange)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
 ---
 
-## Project Overview
+## Overview
 
-Employee onboarding involves multiple departments such as HR, Managers, IT, and Administration. This project replaces manual coordination with an automated workflow that improves efficiency, visibility, and process standardization.
+This project demonstrates an **Employee Onboarding Workflow** developed using **SAP Build Process Automation (SAP Build BPA)** on **SAP Business Technology Platform (SAP BTP)**.
 
-The workflow demonstrates enterprise business process automation using SAP Build Process Automation without custom coding.
+The workflow automates the employee onboarding lifecycle from HR data collection to manager approval, parallel onboarding activities, and HR completion.
 
----
-
-## Business Scenario
-
-When a new employee joins the organization:
-
-1. HR enters employee details.
-2. Manager reviews and approves the onboarding request.
-3. After approval:
-   - IT allocates a laptop.
-   - Administration prepares the employee ID card.
-4. Once both activities are completed, HR finalizes onboarding.
-5. The workflow ends successfully.
+The project showcases practical enterprise workflow automation concepts including human approvals, parallel task execution, dynamic data mapping, SAP Inbox integration, and workflow monitoring.
 
 ---
 
-## Workflow Architecture
+# Business Scenario
+
+When a new employee joins an organization:
+
+- HR submits employee details.
+- Manager reviews the onboarding request.
+- After approval:
+  - IT allocates a laptop.
+  - Administration prepares the employee ID card.
+- Both activities execute simultaneously.
+- HR completes the onboarding process.
+- Workflow ends successfully.
+
+---
+
+# Workflow Architecture
 
 ```text
 Employee Information Form
            │
            ▼
-   Manager Approval
+Manager Approval
            │
-     Approved?
+      Approved
            │
       ┌────┴────┐
       │         │
@@ -44,7 +50,7 @@ Allocation     Setup
       │         │
       └────┬────┘
            ▼
-     HR Completion
+      HR Completion
            │
            ▼
           End
@@ -52,78 +58,65 @@ Allocation     Setup
 
 ---
 
-## Features
+# Features
 
-- Employee Information Form
-- Manager Approval Workflow
-- Dynamic Form Data Mapping
-- Auto-Populated Forms
+- Employee Details Form
+- Manager Approval
+- Dynamic Data Mapping
+- Auto-filled Forms
 - Parallel Task Execution
-- HR Completion Workflow
-- SAP Build Inbox Integration
+- SAP Inbox Integration
 - Workflow Monitoring
+- Process Deployment
 - Public Form Trigger
-- Process Deployment on SAP BTP
 
 ---
 
-## Technologies Used
+# Technologies Used
 
 | Technology | Purpose |
 |------------|---------|
-| SAP Build Process Automation | Workflow Design |
+| SAP Build Process Automation | Workflow Development |
 | SAP BTP | Cloud Platform |
-| SAP Build Forms | Data Collection |
-| SAP Build Inbox | Human Task Management |
-| Workflow Monitoring | Process Tracking |
+| SAP Build Forms | Forms |
+| SAP Workflow | Process Automation |
+| SAP Build Inbox | Task Management |
+| SAP Monitoring | Process Monitoring |
 
 ---
 
-## Workflow Steps
+# Workflow Steps
 
-### Step 1 – Employee Details
+### Step 1
 
-HR submits employee information including:
-
-- Employee Name
-- Employee ID
-- Email
-- Department
-- Designation
-- Joining Date
+HR submits Employee Details.
 
 ---
 
-### Step 2 – Manager Approval
+### Step 2
 
-Manager reviews the onboarding request and either:
-
-- Approves
-- Rejects
+Manager reviews and approves the onboarding request.
 
 ---
 
-### Step 3 – Parallel Processing
+### Step 3
 
-If approved, two tasks execute simultaneously:
+After approval, two onboarding tasks run simultaneously.
 
-**IT Department**
-- Laptop Allocation
-
-**Administration**
-- Employee ID Card Preparation
+- IT Laptop Allocation
+- Admin ID Card Setup
 
 ---
 
-### Step 4 – HR Completion
+### Step 4
 
-After both parallel tasks are completed, HR completes the onboarding process.
+After both tasks finish, HR completes onboarding.
 
 ---
 
-### Step 5 – Workflow End
+### Step 5
 
-The workflow finishes successfully.
+Workflow completes successfully.
 
 ---
 
@@ -131,36 +124,31 @@ The workflow finishes successfully.
 
 ## HR Employee Details Form
 
-> Add Screenshot:
-> `Screenshots/01_HR_Form.png`
+![HR Form](Screenshots/01_HR_Form.png)
 
 ---
 
 ## Workflow Design
 
-> Add Screenshot:
-> `Screenshots/02_Workflow_Design.png`
+![Workflow](Screenshots/02_Workflow_Design.png)
 
 ---
 
 ## Parallel Branch Execution
 
-> Add Screenshot:
-> `Screenshots/03_Parallel_Branch.png`
+![Parallel](Screenshots/03_Parallel_Branch.png)
 
 ---
 
-## Manager Approval (SAP Inbox)
+## Manager Approval
 
-> Add Screenshot:
-> `Screenshots/04_Manager_Approval.png`
+![Manager Approval](Screenshots/04_Manager_Approval.png)
 
 ---
 
 ## Workflow Monitoring
 
-> Add Screenshot:
-> `Screenshots/05_Workflow_Monitoring.png`
+![Monitoring](Screenshots/05_Workflow_Monitoring.png)
 
 ---
 
@@ -170,7 +158,6 @@ The workflow finishes successfully.
 SAP-Build-Employee-Onboarding-Workflow
 │
 ├── README.md
-│
 ├── Screenshots
 │   ├── 01_HR_Form.png
 │   ├── 02_Workflow_Design.png
@@ -184,42 +171,40 @@ SAP-Build-Employee-Onboarding-Workflow
 
 ---
 
-# Key Learnings
-
-Through this project, I gained practical experience in:
+# Key Learning Outcomes
 
 - SAP Build Process Automation
-- SAP BTP
-- Workflow Design
-- Human Approval Processes
+- SAP Business Technology Platform
+- Workflow Development
+- Human Approval Process
+- Dynamic Form Mapping
 - Parallel Branching
-- Form Design
-- Dynamic Data Mapping
-- Process Deployment
-- Workflow Monitoring
-- SAP Build Inbox
+- SAP Inbox
+- Process Monitoring
+- Workflow Deployment
+- Business Process Automation
 
 ---
 
 # Challenges Solved
 
-- Configured dynamic form data mapping between workflow steps.
-- Implemented parallel task execution after manager approval.
+- Implemented dynamic data mapping between forms.
+- Configured parallel task execution after approval.
 - Debugged deployment and workflow configuration issues.
-- Tested workflow execution using SAP Build Monitoring.
-- Resolved form binding and process flow issues.
+- Tested end-to-end workflow execution.
+- Integrated SAP Inbox tasks with workflow.
 
 ---
 
 # Future Enhancements
 
-- SMTP Email Integration
+- SMTP Email Notifications
 - SAP SuccessFactors Integration
 - SAP S/4HANA Integration
-- Role-Based User Assignment
 - Business Rules
-- Approval Notifications
-- Process Analytics Dashboard
+- Role-Based Assignment
+- Dashboard Analytics
+- Notification Center Integration
 
 ---
 
@@ -229,9 +214,10 @@ Through this project, I gained practical experience in:
 
 PGDM | Operations & Business Analytics
 
-SAP Build Process Automation Enthusiast
+SAP Build Process Automation | SAP BTP | Business Process Automation
 
-LinkedIn: https://www.linkedin.com/in/astamirsuhail/
+LinkedIn:
+https://www.linkedin.com/in/astamirsuhail/
 
 ---
 
