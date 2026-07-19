@@ -124,31 +124,31 @@ Workflow completes successfully.
 
 ## HR Employee Details Form
 
-![HR Form](Screenshots01_HR_Form.png)
+![HR Form](Screenshots/Screenshots01_HR_Form.png)
 
 ---
 
 ## Workflow Design
 
-![Workflow](Screenshots02_Workflow_Design.png)
+![Workflow](Screenshots/Screenshots02_Workflow_Design.png)
 
 ---
 
 ## Parallel Branch Execution
 
-![Parallel](Screenshots03_Parallel_Branch.png)
+![Parallel](Screenshots/Screenshots03_Parallel_Branch.png)
 
 ---
 
 ## Manager Approval
 
-![Manager Approval](Screenshots04_Manager_Approval.png)
+![Manager Approval](Screenshots/Screenshots04_Manager_Approval.png)
 
 ---
 
 ## Workflow Monitoring
 
-![Monitoring](Screenshots05_Workflow_Monitoring.png)
+![Monitoring](Screenshots/Screenshots05_Workflow_Monitoring.png)
 
 ---
 
